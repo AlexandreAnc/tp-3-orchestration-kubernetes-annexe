@@ -116,11 +116,9 @@ ou, pour faire build + deploy en une seule commande :
 make up
 ```
 
-Cela crée le namespace `tp-k8s`, le PVC, les Deployments et Services (mongodb, mongo-express, backend, frontend) en utilisant `minikube kubectl -- apply -k k8s/` sous le capot.
+Cela crée le namespace `tp-k8s`, le PVC, les Deployments et Services (mongodb, mongo-express, backend, frontend) en utilisant `minikube kubectl -- apply -k k8s/`
 
 ### 3.4 Vérifier que les pods tournent
-
-Tu peux utiliser la cible dédiée :
 
 ```bash
 make status
@@ -140,7 +138,7 @@ Pour accéder au frontend et à Mongo Express **depuis ta machine**, on utilise 
 make expose-frontend
 ```
 
-Cette commande lance `minikube service frontend-service -n tp-k8s` et ouvre automatiquement ton navigateur sur une URL de type `http://127.0.0.1:XXXXX`.
+Cette commande lance `minikube service frontend-service -n tp-k8s` et ouvre automatiquement le navigateur sur une URL de type `http://127.0.0.1:XXXXX`.
 
 ### 4.2 Mongo Express (admin MongoDB)
 
@@ -148,7 +146,7 @@ Cette commande lance `minikube service frontend-service -n tp-k8s` et ouvre auto
 make expose-mongo-express
 ```
 
-Cette commande lance `minikube service mongo-express -n tp-k8s` et ouvre ton navigateur sur l’interface Mongo Express (login **admin** / **admin**).
+Cette commande lance `minikube service mongo-express -n tp-k8s` et ouvre le navigateur sur l’interface Mongo Express (login **admin** / **admin**).
 
 ---
 
