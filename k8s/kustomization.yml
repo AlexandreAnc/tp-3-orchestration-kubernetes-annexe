@@ -1,0 +1,11 @@
+resources:
+  - namespace.yml
+  - mongodb-pvc.yml
+  - mongodb-deployment.yml
+  - mongodb-service.yml
+  - mongo-express-deployment.yml
+  - mongo-express-service.yml
+  - backend-deployment.yml
+  - backend-service.yml
+  - frontend-deployment.yml
+  - frontend-service.yml
